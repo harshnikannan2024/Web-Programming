@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="OneFix provides a structured, confidential platform to report campus and workplace issues anonymously and follow verified resolution progress.">
+  <title>OneFix — Issue &amp; Resolution Management</title>
+
+  <!-- Favicon Symbol -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23193650' stroke-width='2'><circle cx='12' cy='12' r='9'/><circle cx='12' cy='12' r='3' fill='%232B918B'/></svg>">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Accessible Skip Navigation Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- ======================================================================
+       1. Compact Editorial Navigation Bar
+       ====================================================================== -->
+  <header class="site-nav-header" id="site-header">
+    <div class="page-container nav-inner-row">
+      <!-- OneFix Connected Wordmark with Precision Interlocking Mark -->
+      <a href="index.html" class="brand-identity" aria-label="OneFix Home">
+        <span class="brand-symbol-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none">
+            <circle cx="12" cy="12" r="9" stroke="#193650" stroke-width="2"/>
+            <line x1="12" y1="3" x2="12" y2="7" stroke="#193650" stroke-width="2"/>
+            <line x1="12" y1="17" x2="12" y2="21" stroke="#193650" stroke-width="2"/>
+            <line x1="3" y1="12" x2="7" y2="12" stroke="#193650" stroke-width="2"/>
+            <line x1="17" y1="12" x2="21" y2="12" stroke="#193650" stroke-width="2"/>
+            <circle cx="12" cy="12" r="3" fill="#2B918B"/>
+          </svg>
+        </span>
+        <span class="brand-wordmark-text">OneFix</span>
+      </a>
+
+      <!-- Quiet Editorial Nav Links -->
+      <nav class="nav-menu-links" aria-label="Main Navigation">
+        <a href="#workflow" class="nav-item-link">Workflow</a>
+        <a href="#privacy" class="nav-item-link">Privacy</a>
+        <a href="#routing" class="nav-item-link">Department Routing</a>
+        <a href="track-complaint.html" class="nav-item-link">Track a Report</a>
+      </nav>
+
+      <!-- Nav Actions -->
+      <div class="nav-actions-wrap">
+        <a href="login.html" class="nav-sign-in-link" id="nav-login-link">Sign In</a>
+        <a href="submit-complaint.html" class="btn-midnight" id="nav-report-btn">
+          Report an issue
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="nav-hamburger-toggle" id="mobile-toggle-btn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-nav-panel">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-nav-panel" id="mobile-nav-panel" aria-hidden="true">
+      <a href="#workflow" class="mobile-panel-link">Workflow Process</a>
+      <a href="#privacy" class="mobile-panel-link">Privacy Architecture</a>
+      <a href="#routing" class="mobile-panel-link">Department Routing</a>
+      <a href="track-complaint.html" class="mobile-panel-link">Track a Report</a>
+      <a href="login.html" class="mobile-panel-link">Sign In to Organization</a>
+
+      <div class="mobile-panel-actions">
+        <a href="submit-complaint.html" class="btn-midnight" style="width: 100%;">
+          Report an issue
+        </a>
+        <a href="organization-register.html" class="btn-outline-midnight" style="width: 100%;">
+          Register Organization
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ======================================================================
+       Main Page Content
+       ====================================================================== -->
+  <main id="main-content">
+
+    <!-- ====================================================================
+         2. Editorial Hero Section — New Asymmetric Composition
+         ==================================================================== -->
+    <section class="page-container hero-composition" id="hero" aria-labelledby="hero-main-title">
+      <!-- Contextual Scope Meta Header -->
+      <div class="hero-scope-header">
+        <span>Confidential Issue Management</span>
+        <span>Colleges &bull; Corporate Offices &bull; Facilities</span>
+      </div>
+
+      <!-- Expressive Balanced Headline -->
+      <h1 class="hero-main-title" id="hero-main-title">
+        Report the issue.<br>
+        <span class="serif-italic">Follow the resolution.</span>
+      </h1>
+
+      <!-- Asymmetric Lower Content Split -->
+      <div class="hero-asymmetric-split">
+        <!-- Left: Natural Narrative & Simple Actions -->
+        <div class="hero-narrative-col">
+          <p class="hero-intro-text">
+            OneFix provides a structured way to report campus and workplace issues without exposing the submitter's identity, while giving organizations an accountable path to resolution.
+          </p>
+
+          <div class="hero-actions-cluster">
+            <a href="submit-complaint.html" class="btn-midnight" id="hero-report-btn">
+              Report an issue
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"/>
+                <polyline points="12 5 19 12 12 19"/>
+              </svg>
+            </a>
+
+            <a href="track-complaint.html" class="btn-text-action" id="hero-track-btn">
+              Track a report &rarr;
+            </a>
+          </div>
+
+          <div class="hero-framework-note">
+            Structural submitter anonymity &bull; Segregated organization perimeters &bull; Verified resolution tracking.
+          </div>
+        </div>
+
+        <!-- Right: Integrated Resolution Matrix (Embedded, NOT a Card) -->
+        <div class="hero-matrix-col" aria-label="Resolution Lifecycle Specimen">
+          <div class="matrix-legend-row">
+            <span>Reference Specimen</span>
+            <span>Operational Category</span>
+            <span>Workflow State</span>
+          </div>
+
+          <div class="operational-matrix-table">
+            <div class="matrix-row">
+              <span class="matrix-code">SYS-0482</span>
+              <span class="matrix-category">Campus Infrastructure &amp; HVAC</span>
+              <span class="matrix-status-pill in-progress">In Remediation</span>
+            </div>
+
+            <div class="matrix-row">
+              <span class="matrix-code">SYS-0490</span>
+              <span class="matrix-category">Electrical &amp; Lighting Systems</span>
+              <span class="matrix-status-pill eval">Under Review</span>
+            </div>
+
+            <div class="matrix-row">
+              <span class="matrix-code">SYS-0475</span>
+              <span class="matrix-category">Laboratory Safety Equipment</span>
+              <span class="matrix-status-pill resolved">Resolved &bull; Verified</span>
+            </div>
+
+            <div class="matrix-row">
+              <span class="matrix-code">SYS-0501</span>
+              <span class="matrix-category">Central Network &amp; IT Access</span>
+              <span class="matrix-status-pill received">Received &bull; Queued</span>
+            </div>
+          </div>
+
+          <div class="matrix-footer-caption">
+            <span>Operational Resolution Ledger</span>
+            <span>Illustrative Specimen</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         3. Workflow Section: "From concern to closure."
+         ==================================================================== -->
+    <section class="editorial-block" id="workflow" aria-labelledby="workflow-section-title">
+      <div class="page-container">
+        <span class="section-meta-tag">Operational Trajectory</span>
+        <h2 class="editorial-heading" id="workflow-section-title">
+          From concern to closure.
+        </h2>
+        <p class="editorial-subhead">
+          A continuous, documented operational workflow ensuring no verified submission is neglected or buried in bureaucracy.
+        </p>
+
+        <!-- Connected Process across a Continuous Visual Line -->
+        <div class="workflow-overview-strip" aria-label="Continuous Resolution Steps">
+          <!-- 01 Report -->
+          <div class="workflow-node-col">
+            <div class="node-pin" aria-hidden="true">
+              <div class="node-pin-dot"></div>
+            </div>
+            <div class="node-step-index">01</div>
+            <h3 class="node-title-large">Report</h3>
+            <p class="node-description-text">
+              Submitter logs issue description, location, and category. Personal identity attributes are deliberately decoupled at the intake layer.
+            </p>
+          </div>
+
+          <!-- 02 Review -->
+          <div class="workflow-node-col">
+            <div class="node-pin" aria-hidden="true">
+              <div class="node-pin-dot"></div>
+            </div>
+            <div class="node-step-index">02</div>
+            <h3 class="node-title-large">Review</h3>
+            <p class="node-description-text">
+              Authorized triage members evaluate urgency, confirm facility location, and categorize the grievance against organizational standards.
+            </p>
+          </div>
+
+          <!-- 03 Assign -->
+          <div class="workflow-node-col">
+            <div class="node-pin" aria-hidden="true">
+              <div class="node-pin-dot"></div>
+            </div>
+            <div class="node-step-index">03</div>
+            <h3 class="node-title-large">Assign</h3>
+            <p class="node-description-text">
+              The issue is dispatched to the relevant operational lead or maintenance team with assigned responsibility and a logged timestamp.
+            </p>
+          </div>
+
+          <!-- 04 Resolve -->
+          <div class="workflow-node-col">
+            <div class="node-pin" aria-hidden="true">
+              <div class="node-pin-dot"></div>
+            </div>
+            <div class="node-step-index">04</div>
+            <h3 class="node-title-large">Resolve</h3>
+            <p class="node-description-text">
+              Corrective action is executed, verified, and recorded in the audit log. The submitter inspects the resolution note using their private key.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         4. Privacy Section: Asymmetric Two-Column Editorial
+         ==================================================================== -->
+    <section class="editorial-block-white" id="privacy" aria-labelledby="privacy-section-title">
+      <div class="page-container" style="padding-top: clamp(64px, 7vw, 96px); padding-bottom: clamp(64px, 7vw, 96px);">
+        <div class="privacy-asymmetric-grid">
+          <!-- Left Column: Editorial Perspective on Institutional Safety -->
+          <div class="privacy-essay-col">
+            <span class="section-meta-tag">Intended Privacy Architecture</span>
+            <h2 class="privacy-lead-statement" id="privacy-section-title">
+              Anonymity is a structural feature, not a setting.
+            </h2>
+
+            <p class="privacy-prose-text">
+              In academic institutions, corporate offices, and industrial plants, people hesitate to report broken equipment, code violations, or safety hazards when their names are permanently attached. Fear of social friction or administrative bias leads to compounding operational failures.
+            </p>
+
+            <p class="privacy-prose-text secondary">
+              In the intended OneFix workflow, submitter identity is not exposed to organization administrators. Complainants receive an unguessable tracking code to check status independently &mdash; no email registration, student profile, or login credentials required.
+            </p>
+
+            <div style="margin-top: 24px;">
+              <a href="submit-complaint.html" class="btn-text-action">
+                Submit an issue under anonymous protection &rarr;
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Column: Structural Decoupling Schematic -->
+          <div class="privacy-schematic-col" aria-label="Data Decoupling Specification">
+            <div class="schematic-col-title">Data Decoupling Specification</div>
+
+            <div class="schematic-item-row">
+              <div class="schematic-row-header">
+                <span class="schematic-field-name">Issue Description &amp; Context</span>
+                <span class="schematic-badge-indicator accepted">Accepted</span>
+              </div>
+              <p class="schematic-field-note">
+                Specific problem facts, location indicators, and category parameters necessary to evaluate and fix the condition.
+              </p>
+            </div>
+
+            <div class="schematic-item-row">
+              <div class="schematic-row-header">
+                <span class="schematic-field-name">Submitter Identity Data</span>
+                <span class="schematic-badge-indicator stripped">Stripped at Intake</span>
+              </div>
+              <p class="schematic-field-note">
+                Names, student registration numbers, corporate email addresses, and network identifiers are excluded from the complaint schema.
+              </p>
+            </div>
+
+            <div class="schematic-item-row">
+              <div class="schematic-row-header">
+                <span class="schematic-field-name">Independent Reference Key</span>
+                <span class="schematic-badge-indicator accepted">Generated</span>
+              </div>
+              <p class="schematic-field-note">
+                A standalone tracking key returned to the user screen for querying resolution milestone records without logging in.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         5. Department Routing & Operations Ledger
+         ==================================================================== -->
+    <section class="editorial-block" id="routing" aria-labelledby="routing-section-title">
+      <div class="page-container">
+        <span class="section-meta-tag">Operational Interfaces</span>
+        <h2 class="editorial-heading" id="routing-section-title">
+          Department routing &amp; resolution stages.
+        </h2>
+        <p class="editorial-subhead">
+          How verified organizations triage, delegate, and resolve reports across institutional divisions.
+        </p>
+
+        <!-- Aligned Operations Ledger -->
+        <div class="routing-operations-ledger" aria-label="Department Routing Ledger">
+          <div class="ledger-table-head">
+            <span>Institutional Division</span>
+            <span>Representative Scope</span>
+            <span>Responsible Department</span>
+            <span>Current Protocol</span>
+          </div>
+
+          <!-- Row 1 -->
+          <div class="ledger-row-entry">
+            <div class="ledger-org-division">Academic &amp; Labs</div>
+            <div class="ledger-scope-desc">
+              Laboratory ventilation, experimental equipment faults, lecture hall display failures, and hazardous chemical disposal.
+            </div>
+            <div class="ledger-routing-dept">Lab Management &amp; Safety Panel</div>
+            <div class="ledger-status-tag">Priority Escalation</div>
+          </div>
+
+          <!-- Row 2 -->
+          <div class="ledger-row-entry">
+            <div class="ledger-org-division">Campus Facilities</div>
+            <div class="ledger-scope-desc">
+              Hostel water sanitation, structural repairs, HVAC regulation, restroom hygiene, and electrical distribution lines.
+            </div>
+            <div class="ledger-routing-dept">Campus Maintenance Division</div>
+            <div class="ledger-status-tag">Dispatched Lead</div>
+          </div>
+
+          <!-- Row 3 -->
+          <div class="ledger-row-entry">
+            <div class="ledger-org-division">Workplace Operations</div>
+            <div class="ledger-scope-desc">
+              Ergonomic workspace defects, air quality control, fire exit obstructions, and building security access bottlenecks.
+            </div>
+            <div class="ledger-routing-dept">Facilities Operations Desk</div>
+            <div class="ledger-status-tag">Active Inspection</div>
+          </div>
+
+          <!-- Row 4 -->
+          <div class="ledger-row-entry">
+            <div class="ledger-org-division">Digital Infrastructure</div>
+            <div class="ledger-scope-desc">
+              Campus Wi-Fi connectivity blackouts, server room climate warnings, and institutional portal availability faults.
+            </div>
+            <div class="ledger-routing-dept">Systems &amp; Network Group</div>
+            <div class="ledger-status-tag">Routine Resolution</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         6. Restrained Call-to-Action
+         ==================================================================== -->
+    <section class="page-container callout-restrained-container" aria-labelledby="callout-heading">
+      <div class="callout-inner-card">
+        <div class="callout-text-group">
+          <h2 class="callout-headline" id="callout-heading">
+            Ready to report an issue or onboard your organization?
+          </h2>
+          <p class="callout-paragraph">
+            Establish a direct, accountable grievance redressal channel where every problem has a transparent path to closure.
+          </p>
+        </div>
+
+        <div class="callout-actions-group">
+          <a href="submit-complaint.html" class="btn-midnight" id="cta-report-btn">
+            Report an issue
+          </a>
+          <a href="organization-register.html" class="btn-outline-midnight" id="cta-org-btn">
+            Register Organization
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======================================================================
+       7. Minimal Editorial Footer
+       ====================================================================== -->
+  <footer class="editorial-footer">
+    <div class="page-container">
+      <div class="footer-columns-grid">
+        <!-- Brand Column -->
+        <div class="footer-brand-statement">
+          <h4>OneFix</h4>
+          <p>
+            An editorial technical platform designed for colleges, corporate offices, and facilities. Structured reporting, anonymous intake, and verified resolution.
+          </p>
+        </div>
+
+        <!-- Navigation -->
+        <div>
+          <div class="footer-nav-heading">Platform</div>
+          <div class="footer-nav-items">
+            <a href="#hero">Introduction</a>
+            <a href="#workflow">Workflow Process</a>
+            <a href="#privacy">Privacy Model</a>
+            <a href="#routing">Department Routing</a>
+          </div>
+        </div>
+
+        <!-- Portals -->
+        <div>
+          <div class="footer-nav-heading">Access Portals</div>
+          <div class="footer-nav-items">
+            <a href="submit-complaint.html">Report an Issue</a>
+            <a href="track-complaint.html">Track a Report</a>
+            <a href="login.html">Sign In to Workspace</a>
+            <a href="organization-register.html">Register Organization</a>
+          </div>
+        </div>
+
+        <!-- Architecture Notice -->
+        <div>
+          <div class="footer-nav-heading">Governance</div>
+          <p style="font-size: 0.8125rem; color: var(--charcoal-muted); line-height: 1.55; margin-bottom: 8px;">
+            Segregated organizational perimeters. Zero submitter identity attributes logged in the complaint schema.
+          </p>
+          <span style="font-family: var(--font-mono); font-size: 0.6875rem; color: var(--charcoal-light);">
+            Web Programming Engineering Project
+          </span>
+        </div>
+      </div>
+
+      <div class="footer-fine-line">
+        <span>&copy; 2026 OneFix. Operational Issue Redressal Platform.</span>
+        <span>CONFIDENTIAL INTAKE &bull; AUDIT TRAIL VERIFICATION</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Core JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>
